@@ -101,7 +101,7 @@ syntax changing as we did to get old programs to compile on strict
 ANSI C compilers.
 
 Last, read the judges' comments/spoilers on the program.  Hints
-for `foo.c' are given in `foo.hint'.  Often they will contain suggested
+for `foo.c` are given in `foo.hint`.  Often they will contain suggested
 arguments or recommended data to use.
 
 If you do gain some understanding of how a program works, go back to
@@ -113,20 +113,20 @@ See if you can convince yourself of why the program does what it does.
 
 Each sub-directory contains all the entries for a single year.  Often
 the file names match one of the last names of the author.  Judges'
-hints are given in files of the form ``*.hint''.
+hints are given in files of the form `*.hint`.
 
 You may need to tweak the Makefile to get everything to compile correctly.
 Read the hint files for suggestions.
 
-The rules for a given year are given in the file named ``rules''.  Each
+The rules for a given year are given in the file named `rules`.  Each
 archive contains a copy of the rules for the upcoming contest.
 
-The following URL is the official archive of the winning entries:
+The following URL is the official archive of the [winning entries][2]:
 
 	http://www.ioccc.org/years.html
 
 
-Regarding the distribution of sources:
+### Regarding the distribution of sources:
 
 All contest results are in the public domain.  We do ask that you observe
 the following request:
@@ -136,11 +136,11 @@ doing the same.  If some of these files and/or contest entries are
 published in printed form, or if you use them in a business or classroom
 setting, please let us know.  We ask that you drop a line to the
 'judges' EMail box.  See the following page for instructions on
-how to send us a message,
+how to [send us a message][3],
 
 	http://www.ioccc.org/contact.html
 
-Some final things to remember:
+### Some final things to remember:
 
 While the idea for the contests has remained the same through the
 years, the contest rules and guidelines vary.  What was novel one year
@@ -155,13 +155,13 @@ first named author is used.
 Some C compilers are unable to compile some of these programs.  The
 judges tried to select programs that were widely portable and
 compilable, but did not always succeed.  As of 1990, and entry
-may use both ``K&R'' and ANSI C compilers.  Makefiles for both
+may use both `K&R` and ANSI C compilers.  Makefiles for both
 types of C compilers are used.  See the contest rules for details.
 
 You are strongly encouraged to read the new contest rules before
 sending any entries.  The rules, and sometimes the contest Email
 address itself, change from time to time.  A valid entry one year may
-be rejected in a later year due to changes in the rules.  See:
+be rejected in a later year due to changes in the [rules][4].  See:
 
 	http://www.ioccc.org/index.html#enter
 
@@ -176,3 +176,6 @@ Happy pondering!
 
 
 [1]: http://www.ioccc.org
+[2]: http://www.ioccc.org/years.html
+[3]: http://www.ioccc.org/contact.html
+[4]: http://www.ioccc.org/index.html#enter
