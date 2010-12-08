@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr"
+ lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="KEYWORDS" content="Most circuitous walk">
+  <meta name="robots" content="index,follow">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <title>Most circuitous walk</title>
+  <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/monobook/main.css"; /*]]>*/</style>
+  <link rel="stylesheet" type="text/css" media="print"
+ href="/skins/common/commonPrint.css">
+<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/monobook/IE50Fixes.css";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins/monobook/IE55Fixes.css";</style><![endif]--><!--[if gte IE 6]><style type="text/css">@import "/skins/monobook/IE60Fixes.css";</style><![endif]--><!--[if IE]><script type="text/javascript" src="/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+  <script type="text/javascript"
+ src="/index.php?title=-&amp;action=raw&amp;gen=js"></script>
+  <script type="text/javascript" src="/skins/common/wikibits.js"></script>
+  <style type="text/css">/*<![CDATA[*/
+@import "/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+</head>
+<body class="ns-0">
+<div id="globalWrapper">
+<div id="column-content">
+<div id="content"> <a name="top" id="top"></a>
+<h1 class="firstHeading">Most circuitous walk</h1>
+<div id="bodyContent">
+<!-- start content -->
+<p>Daniel Vik
+</p>
+<pre>  926 Genter Street<br>  La Jolla Ca 92037 <br>  USA<br></pre>
+<pre>  daniel@vik.cc<br></pre>
+<table style="width: 304px; height: 280px;" id="toc" class="toc">
+  <tbody>
+    <tr>
+      <td>
+      <div id="toctitle">
+      <h2>Contents</h2>
+      </div>
+      <ul>
+        <li class="toclevel-1"><a href="#Judges.27_comments"><span
+ class="tocnumber">1</span> <span class="toctext">Judges' comments</span></a>
+          <ul>
+            <li class="toclevel-2"><a href="#To_build"><span
+ class="tocnumber">1.1</span> <span class="toctext">To build</span></a></li>
+            <li class="toclevel-2"><a href="#To_run"><span
+ class="tocnumber">1.2</span> <span class="toctext">To run</span></a></li>
+          </ul>
+        </li>
+        <li class="toclevel-1"><a href="#Author.27s_comments"><span
+ class="tocnumber">2</span> <span class="toctext">Author's comments</span></a>
+          <ul>
+            <li class="toclevel-2"><a href="#Features"><span
+ class="tocnumber">2.1</span> <span class="toctext">Features</span></a></li>
+            <li class="toclevel-2"><a href="#Build_and_Run"><span
+ class="tocnumber">2.2</span> <span class="toctext">Build and Run</span></a></li>
+            <li class="toclevel-2"><a href="#Creating_mazes"><span
+ class="tocnumber">2.3</span> <span class="toctext">Creating mazes</span></a></li>
+            <li class="toclevel-2"><a href="#Obfuscation"><span
+ class="tocnumber">2.4</span> <span class="toctext">Obfuscation</span></a></li>
+            <li class="toclevel-2"><a href="#Compiler_warnings"><span
+ class="tocnumber">2.5</span> <span class="toctext">Compiler warnings</span></a></li>
+            <li class="toclevel-2"><a href="#Limitations"><span
+ class="tocnumber">2.6</span> <span class="toctext">Limitations</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script></p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Judges.27_comments"></a>
+<h2>Judges' comments</h2>
+<br>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_build"></a>
+<h3>To build</h3>
+<pre>  cc -O3 -ansi vik.c -L/usr/X11R6/lib -lX11 -lm -o vik<br></pre>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_run"></a>
+<h3>To run</h3>
+<pre>  vik<br></pre>
+<pre>  vik maze.map<br></pre>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Author.27s_comments"></a>
+<h2>Author's comments</h2>
+<p>This entry is a Wolfenstein style graphics engine where a user can
+navigate in a 3D world. The maze has walls with bitmap textures. The
+application contains a default world with textures, but the power of
+the engine is exposed through user configured maps. User defined
+worlds support up to 26 different wall textures that can even be
+animated. One example of a user defined world is submitted with the
+entry.
+</p>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Features"></a>
+<h3>Features</h3>
+<p>This program is a complete 3D engine with </p>
+<ul>
+  <li> Easy configurable maze maps </li>
+</ul>
+<ul>
+  <li> Up to 26 differnt bitmap textures in a maze </li>
+</ul>
+<ul>
+  <li> Support for animated bitmap textures </li>
+</ul>
+<ul>
+  <li> Uses default bitmaps in case the configured bitmaps can't be
+found </li>
+</ul>
+<ul>
+  <li> A default map in case no one is specified </li>
+</ul>
+<ul>
+  <li> Configurable window size </li>
+</ul>
+<ul>
+  <li> Navigation using cursor keys (rotate left and right, move
+forward and backward) </li>
+</ul>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Build_and_Run"></a>
+<h3>Build and Run</h3>
+<p>Compile the source code and link x libraries if nessecary.
+The program takes three options which have to be typed in a specific
+order as described below.
+</p>
+<pre>  Usage: prog [-w &lt;width&gt;] [mapfile]<br>     <br>  width   - Specifies the width of the window<br>  mapfile - Filename containing a map<br>     <br></pre>
+<p>Here are a few examples:
+</p>
+<pre>      Command line:              Description:<br>      $ ./prog                   Starts the engine using a built in <br>                                 labyrinth and texture bitmaps<br>      $ ./prog maze.map          Starts the engine and loads the <br>                                 labyrinth defined in the file maze.map<br>      $ ./prog -w 400 maze.map   Starts the engine using maze.map in a <br>                                 window that is 400 pixels wide<br>     <br></pre>
+<p>Note that the mapfile has to be the last argument and the -w option
+if present has to be the first. The map definition files and the bitmap
+files should be located in the current directory.
+</p>
+<p>Use the cursor keys to navigate through the labyrinth.
+</p>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Creating_mazes"></a>
+<h3>Creating mazes</h3>
+<p>A maze consist of a map file and texture bitmap files. The map file
+is an ascii text file where lower case letters represent walls. The
+letter tells the engine what bitmap texture file to use. The '*'
+character lets the engine know where to position the user. The example
+below shows how a map file can look:
+</p>
+<pre>   aaaaaaaaaaaaa<br>   a           a<br>   a      *    a<br>   a    bbbb   cccccccc<br>   c                  c<br>   cccccccccccccccccccc<br></pre>
+<p>The engine loads the map, and creates walls. When a character 'a'-'z
+is found, the engine will load the corresponding texture bitmap. The
+bitmap file must be named "*.bmp" where '*' is substituted with the
+letter of the wall in the map.
+</p>
+<p>So to load the map above, the files "a.bmp", "b.bmp", and "c.bmp"
+should be located in the same directory as the engine executable (or
+rather in the current directory).
+</p>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Obfuscation"></a>
+<h3>Obfuscation</h3>
+<p>The program is obfuscated in several ways, bad use of variables, use
+of the&nbsp;? operator, recursive calls to main, bad use of for
+variables
+and the comma operator. To make the final obfuscated touch I ran
+indent which really made the program unreadable (I guess that is not
+really the intent with indent&nbsp;;)
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Compiler_warnings"></a>
+<h3>Compiler warnings</h3>
+<p><br>
+There are no compiler warnings when compiling with -ansi but there
+are quite many warnings from lclint. Mainly because the program is
+very optimized for code size.
+</p>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Limitations"></a>
+<h3>Limitations</h3>
+<p><br>
+The program only compiles and runs on X based systems. </p>
+<p>The program does not run that smooth under cygwin. It seems to be a
+priority issue with cygwin and it can easily be solved by increasing
+the priority of the application a little bit.
+</p>
+<br>
+</div>
+</div>
+</div>
+</div>
+<!-- Served by infong241 in 0.31 secs. -->
+</body>
+</html>

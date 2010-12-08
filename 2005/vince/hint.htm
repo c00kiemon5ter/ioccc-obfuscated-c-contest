@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr"
+ lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="KEYWORDS" content="Most beauteous visuals">
+  <meta name="robots" content="index,follow">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <title>Most beauteous visuals</title>
+  <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/monobook/main.css"; /*]]>*/</style>
+  <link rel="stylesheet" type="text/css"
+ href="/skins/common/commonPrint.css">
+<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/monobook/IE50Fixes.css";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins/monobook/IE55Fixes.css";</style><![endif]--><!--[if gte IE 6]><style type="text/css">@import "/skins/monobook/IE60Fixes.css";</style><![endif]--><!--[if IE]><script type="text/javascript" src="/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+  <script type="text/javascript"
+ src="/index.php?title=-&amp;action=raw&amp;gen=js"></script>
+  <script type="text/javascript" src="/skins/common/wikibits.js"></script>
+  <style type="text/css">/*<![CDATA[*/
+@import "/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+</head>
+<body class="ns-0">
+<div id="globalWrapper">
+<div id="column-content">
+<div id="content"> <a name="top" id="top"></a>
+<h1 class="firstHeading">Most beauteous visuals</h1>
+<div id="bodyContent">
+<div id="contentSub"></div>
+<!-- start content -->
+<p>Vincent Weaver
+</p>
+<pre>  Ithaca, NY<br>  USA<br></pre>
+<pre>  vince@deater.net<br>  <a href="http://www.deater.net/weave/"
+ class="external free" title="http://www.deater.net/weave/"
+ rel="nofollow">http://www.deater.net/weave/</a>
+</pre>
+<table style="width: 473px; height: 133px;" id="toc" class="toc">
+  <tbody>
+    <tr>
+      <td>
+      <div id="toctitle">
+      <h2>Contents</h2>
+      </div>
+      <ul>
+        <li class="toclevel-1"><a href="#Judges.27_comments"><span
+ class="tocnumber">1</span> <span class="toctext">Judges' comments</span></a></li>
+        <li class="toclevel-1"><a href="#Improved_Version"><span
+ class="tocnumber">2</span> <span class="toctext">Improved Version</span></a>
+          <ul>
+            <li class="toclevel-2"><a href="#To_build"><span
+ class="tocnumber">2.1</span> <span class="toctext">To build</span></a></li>
+            <li class="toclevel-2"><a href="#To_run"><span
+ class="tocnumber">2.2</span> <span class="toctext">To run</span></a></li>
+          </ul>
+        </li>
+        <li class="toclevel-1"><a href="#Author.27s_comments"><span
+ class="tocnumber">3</span> <span class="toctext">Author's comments</span></a>
+          <ul>
+            <li class="toclevel-2"><a href="#ABUSE_OF_RULES"><span
+ class="tocnumber">3.1</span> <span class="toctext">ABUSE OF RULES</span></a></li>
+            <li class="toclevel-2"><a href="#Requirements"><span
+ class="tocnumber">3.2</span> <span class="toctext">Requirements</span></a></li>
+            <li class="toclevel-2"><a href="#Background"><span
+ class="tocnumber">3.3</span> <span class="toctext">Background</span></a></li>
+            <li class="toclevel-2"><a href="#Obfuscation"><span
+ class="tocnumber">3.4</span> <span class="toctext">Obfuscation</span></a></li>
+            <li class="toclevel-2"><a href="#Usage"><span
+ class="tocnumber">3.5</span> <span class="toctext">Usage</span></a></li>
+            <li class="toclevel-2"><a href="#For_Fun"><span
+ class="tocnumber">3.6</span> <span class="toctext">For Fun</span></a></li>
+            <li class="toclevel-2"><a href="#Thanks"><span
+ class="tocnumber">3.7</span> <span class="toctext">Thanks</span></a></li>
+            <li class="toclevel-2"><a href="#Errors_you_can_get"><span
+ class="tocnumber">3.8</span> <span class="toctext">Errors you can get</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script></p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Judges.27_comments"></a>
+<h2>Judges' comments</h2>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Improved_Version"></a>
+<h2>Improved Version</h2>
+<p>This following improved version of the submission will run on SGI
+Irix and also has the recursive CPP macro (which snuck in accidentally)
+removed.
+</p>
+<p><a href="/images/a/a2/Vince.improved.c" class="internal"
+ title="Vince.improved.c">vince.improved.c</a>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_build"></a>
+<h3>To build</h3>
+<p>Before building, make sure that you have the OpenGL development
+libraries installed.
+</p>
+<pre>  cc -Wall -O2 -o vince vince.c -L/usr/X11R6/lib -lGL -lGLU -lX11<br></pre>
+<p>If you are on a 64 bit platform you might need to substitute
+"-L/usr/X11R6/lib64".
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_run"></a>
+<h3>To run</h3>
+<pre>  vince<br></pre>
+<p>Under MacOSX run from within an xterm while the X11 server is
+running.
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Author.27s_comments"></a>
+<h2>Author's comments</h2>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="ABUSE_OF_RULES"></a>
+<h3>ABUSE OF RULES</h3>
+<ul>
+  <li> The executable needs to read in its own source code in order to
+run. As long as the source is in the same directory as the executable
+it should be able to find it... </li>
+  <li> The program requires the OpenGL library. </li>
+  <li> The program abuses severely the whitespace and { }&nbsp;;
+exceptions in the filesize limits. </li>
+</ul>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Requirements"></a>
+<h3>Requirements</h3>
+<ul>
+  <li> OpenGL. It works (slowly) with Mesa. </li>
+  <li> 16bpp graphics capability (but might work at other depths) </li>
+  <li> The original source needs to be in the same directory as the
+executable, and the source's name should be the same as the executable
+but with .c on the end. </li>
+</ul>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Background"></a>
+<h3>Background</h3>
+<p>I was annoyed after the last IOCCC because I slaved away on a clever
+text based game only to find all of the game winners used X11. X11
+isn't standard C!
+</p>
+<p>So to one up them, I decided to use OpenGL. It's standard, and most
+Unix-like systems these days have either accelerated graphics or else
+software rendering.
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Obfuscation"></a>
+<h3>Obfuscation</h3>
+<p>It was a challenge getting the source code below the 2k limit.
+OpenGL has way too many GRATUITOUSLY_LONG_CONSTANTS and
+glLongStudlyFunctionNames();
+</p>
+<p>Therefore, much of the obfuscation comes secondary to just reducing
+the code size to fit under the limit while still having some semblance
+of a demo.
+</p>
+<p>There are some interesting abuses scattered about.
+</p>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Usage"></a>
+<h3>Usage</h3>
+<p>Try hitting the spacebar when the program is running.
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="For_Fun"></a>
+<h3>For Fun</h3>
+<p>Try modifying the texture to your own custom design...
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Thanks"></a>
+<h3>Thanks</h3>
+<p>Many thanks to John Clemens for testing this on various machines for
+me.
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Errors_you_can_get"></a>
+<h3>Errors you can get</h3>
+<pre> 0 = no error<br> 1 = X problem<br> 2 = Can't open glx<br> 3 = Can't open 16bpp visual<br> 4 = can't open source file<br></pre>
+<!-- Saved in parser cache with key db141535435:pcache:idhash:1295-0!1!0!0!!en!2 and timestamp 20060219194325 --></div>
+</div>
+</div>
+</div>
+<!-- Served by infong241 in 0.26 secs. -->
+</body>
+</html>

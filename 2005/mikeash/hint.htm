@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr"
+ lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="KEYWORDS" content="Best use of parenthesis">
+  <meta name="robots" content="index,follow">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <title>Best use of parenthesis</title>
+  <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/monobook/main.css"; /*]]>*/</style>
+  <link rel="stylesheet" type="text/css"
+ href="/skins/common/commonPrint.css">
+<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/monobook/IE50Fixes.css";</style><![endif]--><!--[if IE 5.5000]><style type="text/css">@import "/skins/monobook/IE55Fixes.css";</style><![endif]--><!--[if gte IE 6]><style type="text/css">@import "/skins/monobook/IE60Fixes.css";</style><![endif]--><!--[if IE]><script type="text/javascript" src="/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+  <script type="text/javascript"
+ src="/index.php?title=-&amp;action=raw&amp;gen=js"></script>
+  <script type="text/javascript" src="/skins/common/wikibits.js"></script>
+  <style type="text/css">/*<![CDATA[*/
+@import "/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+</head>
+<body class="ns-0">
+<div id="globalWrapper">
+<div id="column-content">
+<div id="content"> <a name="top" id="top"></a>
+<h1 class="firstHeading">Best use of parenthesis</h1>
+<div id="bodyContent">
+<!-- start content -->
+<p>Michael Ash
+</p>
+<pre>  USA<br></pre>
+<pre>  mike@mikeash.com<br></pre>
+<table style="width: 393px; height: 135px;" id="toc" class="toc">
+  <tbody>
+    <tr>
+      <td>
+      <div id="toctitle">
+      <h2>Contents</h2>
+      </div>
+      <ul>
+        <li class="toclevel-1"><a href="#Judges.27_comments"><span
+ class="tocnumber">1</span> <span class="toctext">Judges' comments</span></a>
+          <ul>
+            <li class="toclevel-2"><a href="#To_build"><span
+ class="tocnumber">1.1</span> <span class="toctext">To build</span></a></li>
+            <li class="toclevel-2"><a href="#To_run"><span
+ class="tocnumber">1.2</span> <span class="toctext">To run</span></a></li>
+          </ul>
+        </li>
+        <li class="toclevel-1"><a href="#Author.27s_comments"><span
+ class="tocnumber">2</span> <span class="toctext">Author's comments</span></a></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script></p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Judges.27_comments"></a>
+<h2>Judges' comments</h2>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_build"></a>
+<h3>To build</h3>
+<pre>  gcc --std=c99 -o mikeash mikeash.c<br></pre>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="To_run"></a>
+<h3>To run</h3>
+<pre>  mikeash &lt; mikeash.c<br>  mikeash &lt; mikeash.c | diff - mikeash.c<br></pre>
+<p><br>
+</p>
+<div class="editsection" style="float: right; margin-left: 5px;"><br>
+</div>
+<a name="Author.27s_comments"></a>
+<h2>Author's comments</h2>
+<p>This program is a self-reproducing program, which is on the IOCCC's
+list of discouraged program types. Worse, it's a self-reproducing
+program written in Common Lisp. What's this doing as an entry to the
+IOCCC?
+</p>
+<p>Start over; this program, when compiled with a C99 compiler, is an
+interpreter for an extremely limited and highly broken subset of Common
+Lisp.
+</p>
+<p>It requires C99 because of C99's ability to declare variables in the
+initializer of a for loop. Unfortunately, C99 mode typically warns
+about implicitly declared functions, and preprocessor directives
+prevent the program from being valid Common Lisp. As a result, several
+warnings will be printed about implicit declarations of functions.
+There are also warnings about unknown escape sequences in the constant
+string, due to different string escape semantics in C and Lisp, and
+some implicit integer-to-pointer conversions due to the
+implicitly-declared functions.
+</p>
+<p>Try:
+</p>
+<pre>   echo '(format t "~s" (+ 2 2 ))' | ./lispob<br></pre>
+<p>You should see '4"' echoed on your command prompt. The " after the 4
+and the lack of a newline are due to the somewhat broken implementation
+of the format function. More sophisticated arithmetic expressions may
+be used:
+</p>
+<pre>   echo '(format t "~s" (* (+ 2 2 ) (- 5 (/ 9 3 ))))' | ./lispob<br></pre>
+<p>This evaluates the expression (2+2) * (5 - 9/3) giving the correct
+result, 8. Note that due to the highly ad-hoc nature of the tokenizer,
+the spaces before the closing paretheses are mandatory.
+</p>
+<p>The program can also be run in an interactive mode, by simply
+executing ./lispob and then typing lisp expressions, but this is
+difficult due to the lack of proper editing facilities and the total
+lack of error recovery in the interpreter. Typos will most likely crash
+the program.
+</p>
+<p>Aside from being required to put spaces between tokens and closing
+parentheses, there are other limitations on the dialect of Common Lisp
+that this program understands:
+</p>
+<ul>
+  <li> The only built-in functions are defvar, format, substitute,
+char-upcase, +, -, *, and /. </li>
+  <li> Only one variable is available. This variable is called 'q',
+although any symbol name starting with the letter 'q' will be mapped to
+this variable. </li>
+  <li> Only the first letter of a function name is significant. For
+example, format, f, farm, and various other words starting with 'f'
+will all map to the format function. </li>
+  <li> The defvar function completely ignores its first parameter. It
+will always store the result of evaluating its second parameter in 'q'.
+Unlike in Common Lisp, multiple invocations of defvar on the same
+variable will overwrite old values. </li>
+  <li> Character constants are limited to #\Newline and
+single-character constants such as #\x. </li>
+  <li> The char-upcase function will give strange results if passed
+something other than a lowercase character. </li>
+  <li> The format function takes exactly three parameters. The first
+parameter is ignored; output always goes to stdout. The second
+parameter must have exactly one ~s format specifier in it, and no other
+format specifiers are permitted. </li>
+  <li> The arithmetic functions take exactly two parameters. </li>
+  <li> All tokens must be separated from a following ) by whitespace. </li>
+  <li> A lot of other things. Notably, the language which this program
+interprets is nowhere near Turing-complete. </li>
+</ul>
+<p>Basically, the lisp interpreter is good for some basic math
+operations, and for running itself. To do the latter, try this:
+</p>
+<pre>   ./lispob &lt; lispob.c &gt; lispob2.c<br>   diff lispob.c lispob2.c<br></pre>
+<p>The program can also be run from an implementation of common lisp.
+To do this, run the common lisp compiler and then type the following
+command:
+</p>
+<pre>   (load "lispob.c")<br></pre>
+<p>The source code of lispob.c will be printed.
+</p>
+<p>Lispob is obfuscated in several ways. First, it's actually two
+programs in one, which actually share a small amount of code. Running a
+C code beautifier will destroy the lisp program contained within.
+Second and more importantly, it is very badly written, which will
+presumably confuse people who are used to looking at well-implemented
+interpreters.
+</p>
+<p>The program comes in at just under 2k of significant characters.
+However, this size is exaggerated, because it contains a complete copy
+of itself for the self-reproducing lisp program, making it twice the
+size. This doubling effect made it something of a challenge to fit
+inside the IOCCC's size limit.
+</p>
+<p>This code should be highly portable. It was tested under Mac OS X
+and Linux on i386, but it should run elsewhere. It requires ASCII due
+to hardcoding various character constants. Other than this requirement,
+it should run anywhere there's a conforming C99 compiler and a standard
+C library.
+</p>
+<!-- Saved in parser cache with key db141535435:pcache:idhash:1290-0!1!0!0!!en!2 and timestamp 20060219194015 --></div>
+</div>
+</div>
+</div>
+<!-- Served by infong241 in 0.34 secs. -->
+</body>
+</html>
