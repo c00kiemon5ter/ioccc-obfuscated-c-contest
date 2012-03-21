@@ -1,67 +1,67 @@
-# yr filename	Spoiler summary
+# yr filename   Spoiler summary
 #
 
 1984 anonymous	prints hello world, where read is write
-1984 decot  	prints garbage, weird cpp defines (keywords for others)
-1984 laman  	prints spiralling numbers, laid out in columns
+1984 decot	prints garbage, weird cpp defines (keywords for others)
+1984 laman	prints spiralling numbers, laid out in columns
 1984 mullender	hardcoded vax and pdp-11 code to move :-) across the screen
 
-1985 applin  	one-liner to print hello world, with execlp
-1985 august  	cpp obfuscated, compressed, main-recursive primes in binary
-1985 lycklama  	heavily cpped with o_oo identifiers, scrolls text right
-1985 shapiro  	two defines, one 7-liner, results in a maze
+1985 applin	one-liner to print hello world, with execlp
+1985 august	cpp obfuscated, compressed, main-recursive primes in binary
+1985 lycklama	heavily cpped with o_oo identifiers, scrolls text right
+1985 shapiro	two defines, one 7-liner, results in a maze
 1985 sicherman	rot13 with strange #defs that create comment headers etc.
 
-1986 applin  	hello world works under cc, /bin/sh, and f77
-1986 august  	struct-heavy e-computation, memory allocation with sbrk
-1986 bright  	hex dump, cpp compressed, uses lost of << for constants
-1986 hague  	morse code filter written with 'DIT DAH _DIT DIT_DAH'
-1986 holloway  	prints hello world! via a recursive main
-1986 marshall  	train engine-shaped program prints "choo choo"
-1986 pawka  	prints 'obfuscated?' big, uses xyyyx idents...
-1986 stein  	prints HHMMSS in UTC time
-1986 wall  	dvorak keyboard emulator
+1986 applin	hello world works under cc, /bin/sh, and f77
+1986 august	struct-heavy e-computation, memory allocation with sbrk
+1986 bright	hex dump, cpp compressed, uses lost of << for constants
+1986 hague	morse code filter written with 'DIT DAH _DIT DIT_DAH'
+1986 holloway	prints hello world! via a recursive main
+1986 marshall	train engine-shaped program prints "choo choo"
+1986 pawka	prints 'obfuscated?' big, uses xyyyx idents...
+1986 stein	prints HHMMSS in UTC time
+1986 wall	dvorak keyboard emulator
 
-1987 biggar  	program: "P;" defined on command line
-1987 heckbert  	obfuscated fold program
-1987 hines  	counts goto's, all ids anagrams of 'goto', all flow w goto
-1987 korn  	one-liner that prints a message on a Un*x system
-1987 lievaart  	very good othello player
-1987 wall  	roman numeral -> decimal and vice versa conversion
-1987 westley  	individually palindromic lines prints a palindrome
+1987 biggar	program: "P;" defined on command line
+1987 heckbert	obfuscated fold program
+1987 hines	counts goto's, all ids anagrams of 'goto', all flow w goto
+1987 korn	one-liner that prints a message on a Un*x system
+1987 lievaart	very good othello player
+1987 wall	roman numeral -> decimal and vice versa conversion
+1987 westley	individually palindromic lines prints a palindrome
 
-1988 applin  	massive #define stuff, includes itself; prints table of primes
-1988 dale  	prints command line, using lots of system calls
-1988 isaak  	table driven table of the elements; cpp, self-inclusion
-1988 litmaath  	sorts each arg using only argc, argv, and 'while(<cond>);'
-1988 phillipps  'first day of christmas', tables, heavily main() calling
-1988 reddy  	prints name of 'char *(*(foo[16])();', compressed
-1988 robison  	print e in any base, uses only --, >=, and while()
+1988 applin	massive #define stuff, includes itself; prints table of primes
+1988 dale	prints command line, using lots of system calls
+1988 isaak	table driven table of the elements; cpp, self-inclusion
+1988 litmaath	sorts each arg using only argc, argv, and 'while(<cond>);'
+1988 phillipps	'first day of christmas', tables, heavily main() calling
+1988 reddy	prints name of 'char *(*(foo[16])();', compressed
+1988 robison	print e in any base, uses only --, >=, and while()
 1988 spinellis	#include "/dev/tty"
-1988 westley  	prints '3.141', circle made of '_-_-_-_' in layout
+1988 westley	prints '3.141', circle made of '_-_-_-_' in layout
 
-1989 fubar  	self-reconstructing, recompiling factorial program
-1989 jar.1  	char*_="Hello world.\n";
-1989 jar.2  	lisp interpreter, compressed
+1989 fubar	self-reconstructing, recompiling factorial program
+1989 jar.1	char*_="Hello world.\n";
+1989 jar.2	lisp interpreter, compressed
 1989 ovdluhe	monkey-typer following template, 'APE' identifiers
-1989 paul  	print fibonacci base 2 by simulating turing machine
-1989 robison  	apl-expression interpreter (binary), written in C--
-1989 roemer  	prints e, script-pi shaped layout, _31415 identifiers
-1989 tromp  	squished tetris
-1989 vanb  	one-liner prints all subsets of arguments
-1989 westley  	reversible, rot13able program that reverses and/or rot13s.
+1989 paul	print fibonacci base 2 by simulating turing machine
+1989 robison	apl-expression interpreter (binary), written in C--
+1989 roemer	prints e, script-pi shaped layout, _31415 identifiers
+1989 tromp	squished tetris
+1989 vanb	one-liner prints all subsets of arguments
+1989 westley	reversible, rot13able program that reverses and/or rot13s.
 
-1990 baruch  	short prog to solve N-queens problem
-1990 cmills  	squished blackjack game
-1990 dds  	basic interpreter, heavily compressed
-1990 dg		rot13 done with strange cpp macros
-1990 jaw  	compress & atob standins
-1990 pjr  	the quick brown fox... cppd, structs of functions
+1990 baruch	short prog to solve N-queens problem
+1990 cmills	squished blackjack game
+1990 dds	basic interpreter, heavily compressed
+1990 dg	rot13 done with strange cpp macros
+1990 jaw	compress & atob standins
+1990 pjr	the quick brown fox... cppd, structs of functions
 1990 scjones	trigraph-abusing self-reproducing program
-1990 stig  	nested-comment tester (all on command line)
-1990 tbr  	simple compressed shell, silly layout
+1990 stig	nested-comment tester (all on command line)
+1990 tbr	simple compressed shell, silly layout
 1990 theorem	numerically solves the equation y'=f(x,y)
-1990 westley  	poetic exchange between lovers, prints "luvs me, luvs not"
+1990 westley	poetic exchange between lovers, prints "luvs me, luvs not"
 
 1991 ant	compressed vi-like editor
 1991 brnstnd	sorta stack language
@@ -77,7 +77,7 @@
 1992 albert	factors multi-precision numbers with factors < MAX_LONG
 1992 ant	make utility
 1992 buzzard.1	print factorial, gcd or prime test using a Babbage-like engine
-1992 buzzard.2  forth-like stack machine
+1992 buzzard.2	forth-like stack machine
 1992 gson	anagram generator
 1992 imc	Mandelbrot/Julia drawer
 1992 kivinen	X11 space invaders, dropout and knockout games
@@ -117,12 +117,12 @@
 1995 esde	Searches for words in a file which have the same Soundex code
 1995 garry	Environment-expansion and binary output via escaped env vars
 1995 heathbar	16 bit addition the easy/hard way
-1995 leob	Output interesting patterns and cycles in PostScript
-1995 makarios   Emits the base 8 representation of prime palindromic in base 8
-1995 savastio   Infinite-precision factorial calculator
-1995 schnitzi   Find divisors: where a core dump is a feature, not a bug
-1995 spinellis  Abusing the rules
-1995 vanschnitz Towers of Hanoi via the C pre-processor
+1995 leo	Output interesting patterns and cycles in PostScript
+1995 makarios	Emits the base 8 representation of prime palindromic in base 8
+1995 savastio	Infinite-precision factorial calculator
+1995 schnitzi	Find divisors: where a core dump is a feature, not a bug
+1995 spinellis	Abusing the rules
+1995 vanschnitz	Towers of Hanoi via the C pre-processor
 
 1996 august	Subset of C compiler and byte code interpreter
 1996 dalbec	Generator of strong probable-primes to a given base
@@ -136,11 +136,13 @@
 1996 schweikh3	Determins the memory allocation honesty of the OS
 1996 westley	Shows the time on clock with a configurable face and style
 
+# There is no 1997 IOCCC contest
+
 1998 banks	A flight simulator!
 1998 bas1	Outputs a gziped 3D beam maze in Postscript
 1998 bas2	determines the size of stdin under IOCCC sizing rules
 1998 chaos	Rotates and zooms an object using ASCII graphics
-1998 df		A word guessing game
+1998 df	A word guessing game
 1998 dlowe	Pootifies stdin (useful to view Microsoft html files)
 1998 dloweneil	A very addictive ASCII poot game
 1998 dorssel	ASCII / Morse code translator
@@ -188,19 +190,58 @@
 
 # There is no 2003 IOCCC contest
 
-2004 anonymous  Rendering of a stroked font
-2004 arachnid   Curses maze displayer/navigator with only line-of-sight visibility
-2004 burley     A Poker game
-2004 gavare     A ray tracer
-2004 gavin      Mini-OS
-2004 hibachi    A CGI capable HTTP server
-2004 hoyle      Curses based polynomial graphing with auto-scale
-2004 jdalbec    Conway's look'n'say sequence split into elements
-2004 kopczynski OCR of 8, 9, 10 and 11
-2004 newbern    Renders arbitary bitmapped fonts
-2004 omoikane   A CRC inserter
-2004 schnitzi   Editor animation
-2004 sds        Space/tab/linefeed steganography
-2004 vik1       X Windows car racing game
-2004 vik2       Calculates prime numbers using only CPP
+2004 anonymous	Rendering of a stroked font
+2004 arachnid	Curses maze displayer/navigator with only line-of-sight visibility
+2004 burley	A Poker game
+2004 gavare	A ray tracer
+2004 gavin	Mini-OS
+2004 hibachi	A CGI capable HTTP server
+2004 hoyle	Curses based polynomial graphing with auto-scale
+2004 jdalbec	Conway's look'n'say sequence split into elements
+2004 kopczynski	OCR of 8, 9, 10 and 11
+2004 newbern	Renders arbitary bitmapped fonts
+2004 omoikane	A CRC inserter
+2004 schnitzi	Editor animation
+2004 sds	Space/tab/linefeed steganography
+2004 vik1	X Windows car racing game
+2004 vik2	Calculates prime numbers using only CPP
+
+2005 aidan	Sudoku solver
+2005 anon	Multi-dimensional sliding tile puzzle generator
+2005 boutines	Voronoi diagram generator
+2005 chia	Java parody
+2005 giljade	2D sliding tile puzzle solver
+2005 jetro	Audio synthesizer
+2005 klausler	Anagram generator
+2005 mikeash	Self-printing Common Lisp interpreter
+2005 mynx	Web browser
+2005 persano	Generates animated knots
+2005 sykes	Commodore PET emulator
+2005 timwi	A BF lanaguage interpreter
+2005 toledo	Play chess
+2005 vik	Wolfenstein style graphics engine
+2005 vince	Rotating GL Cube demo
+
+2006 birken	Circuit Simulator
+2006 borsanyi	Email address to gif image
+2006 grothe	Plays audio using a monitor
+2006 hamre	A calculator for rational numbers
+2006 meyer	A two player sudoku like game
+2006 monge	Graphical fractal generator
+2006 night	A maze game
+2006 sloane	Animated donut
+2006 stewart	IFS fractal generator
+2006 sykes1	Bedlam cube solver
+2006 sykes2	A clock in one line
+2006 toledo1	Solve the knight chess problem
+2006 toledo2	An 8080 emulator
+2006 toledo3	An X11 chess game
+
+# There is no 2007 IOCCC contest
+
+# There is no 2008 IOCCC contest
+
+# There is no 2009 IOCCC contest
+
+# There is no 2010 IOCCC contest
 
